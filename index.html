@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Wallet</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+</head>
+<body>
+    <div class="wallet-container">
+        <h1>Digital Wallet</h1>
+
+        <!-- Connect Wallet Section -->
+        <div class="section">
+            <button id="connectWalletBtn" class="btn">Connect Wallet</button>
+            <p id="walletAddress">No wallet connected</p>
+        </div>
+
+        <!-- Deposit Ether -->
+        <div class="section">
+            <h2>Deposit Ether</h2>
+            <input type="number" id="depositAmount" placeholder="Amount to deposit (ETH)">
+            <button id="depositBtn" class="btn">Deposit</button>
+        </div>
+
+        <!-- Set Spending Limit -->
+        <div class="section">
+            <h2>Set Spending Limit</h2>
+            <input type="number" id="spendingLimit" placeholder="Set spending limit (ETH)">
+            <button id="setLimitBtn" class="btn">Set Limit</button>
+        </div>
+
+        <!-- Withdraw Ether -->
+        <div class="section">
+            <h2>Withdraw Ether</h2>
+            <input type="number" id="withdrawAmount" placeholder="Amount to withdraw (ETH)">
+            <button id="withdrawBtn" class="btn">Withdraw</button>
+        </div>
+
+        <!-- Contract Information -->
+        <div class="section">
+            <button id="getRemainingLimitBtn" class="btn">Check Remaining Limit</button>
+            <p id="remainingLimit">Remaining Limit: N/A</p>
+            <button id="getContractBalanceBtn" class="btn">Check Contract Balance</button>
+            <p id="contractBalance">Contract Balance: N/A</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
